@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="site.css">
+    <title>Chopeiras_ulson</title>
+</head>
+<body>
+
+  <!--------------------------------------HOME E MENU --------------------------------->
+    <div class="home">
+        <a>
+        <img id="home_imagem" src="logo_ulson.png" alt="logo_ulson">
+        </a>
+
+        <nav>
+            <ul id="home" class="menu">
+            <li><a href="#home" class="link-nav" style="text-decoration: none;">Home</a></li>
+            <li><a href="pag2.html" class="link-nav" style="text-decoration: none;">Sobre</a></li>
+            <li><a href="#servicoss" class="link-nav" style="text-decoration: none;">Serviços</a></li>
+            <li><a href="#entregas-deli" class="link-nav" style="text-decoration: none;">Delivery</a></li>
+            <li><a href="#contatoss" class="link-nav" style="text-decoration: none;">Contato</a></li>
+          </ul>
+        </nav>
+    </div>
+    <!--------------------------------------parte carossel------------------------------>
+    <div class="carousel">
+        <div class="slides">
+          <div class="slide slide1"> <img src="banner_carrosel01jpg.jpg" alt=""></div>
+          <div class="slide slide2"> <img src="banner_carrosel02jpg.jpg" alt=""></div>
+          <div class="slide slide3"> <img src="banner_carrosel03v2.jpg" alt=""></div>
+        </div>
+        <div class="controls">
+          <button class="control prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="control next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+      </div>
+      <!----------------------------------parte delivery------------------------------>
+      <div id="entregas-deli" class="delivery">
+        <div class="imagem-entrega">
+          <img src="cerverja_delivery2.png" alt="Máquina de chopp" class="imagem-entrega-principal">
+        </div>
+        <div class="texto-entrega">
+          <img src="icone_delivery.png" alt="Ícone delivery" class="imagem-entrega-icone">
+          <h1 class="titulo-delivery">DELIVERY CHOPP <br> ULSON</h1>
+          <p class="descricao-delivery">
+            Através de nosso delivery, você pode ter na sua <br> casa, festa ou churrasco o Chopp Ulson.
+          </p>
+          <a href="https://wa.me/5511989682413" target="_blank" class="botao-delivery">Clique aqui e PEÇA JÁ!</a>
+        </div>
+      </div>
+      <!-----------------------------------barril------------------------------------>
+      <div class="barris">
+        <div class="opcao-barril">
+          <h1 id="titulobarril">Temos barris de: </h1>
+          <img  class="meubarril" src="barril.png" alt="barril">
+        </div>
+        <div id="tipobarril">
+          <h1 id="tipobarril1">30 Litros</h1>
+          <h1 id="tipobarril2">50 Litros</h1>
+        </div>
+      </div>
+
+      <div id="servicoss"  class="chopeiras">
+        <div class="minhaschopeiras">
+          <h1 id="titulochopeira">Chopeiras em Comodato</h1>
+          <p id="tipochopeira1">
+            Para que você possa fazer o seu evento, <br>
+            realizamos a instalação de nossas chopeiras em comodato.
+          </p>
+        </div>
+        <img id="chopeiras1" src="chopeiracomodato.jpg" alt="Chopeira">
+      </div>
+
+      <!----------------------------------contato-site------------------------------>
+      <div id="contatoss" class="contato-site">
+        <h1 id="titulo-contato">Saiba mais sobre nossos serviços!</h1>
+        <a href="https://wa.me/5511989682413" target="botaoservicos" class="botao-pecaja">
+          <img src="link-icon.png" class="icon-link" alt="icon-link">
+          Entre em contato
+        </a>
+      </div>
+      <!-----------------------------roda-pé--------------------------------------->
+
+      <footer class="rodape">
+        <div class="rodape-footer">
+          <ul class="menu-rodape">
+            <li><a href="#home" class="link-nav">Home</a></li>
+            <li><a href="pag2.html" class="link-nav">Sobre</a></li>
+            <li><a href="#servicoss" class="link-nav">Serviços</a></li>
+            <li><a href="#entregas-deli" class="link-nav">Delivery</a></li>
+            <li><a href="#contatoss" class="link-nav">Contato</a></li>
+          </ul>
+          <div class="logorodape">
+            <img src="logo_ulson.png" alt="Logo Ulson">
+          </div>
+          <div class="redes-rodape">
+            <a href="https://www.facebook.com/profile.php?id=61572485826789" target="_blank" class="icon-link"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/chopeiras_comodato/" target="_blank" class="icon-link"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://wa.me/5511989682413" target="_blank" class="icon-link"><img src="whatsapp.png" alt="WhatsApp"></a>
+          </div>
+        </div>
+      </footer>
+<!--------------------------------politicas e termos---------------------------------->
+        <div class="politcas-e-termos">
+          <a href="cookies.html" target="politicaetermos" class="cookies1">Política de Cookies</a>
+          <img src="link-icon.png" class="icon-link2" alt="icon-link2">
+          <a href="privacidade.html" target="politicasetermos" class="privacidades1">Política de Privacidade</a>
+          <img src="link-icon.png" class="icon-link2" alt="icon-link2">
+        </div>
+
+</body>
+
+<script  src="site.js"></script>
+</html>

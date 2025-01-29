@@ -1,0 +1,1070 @@
+html, body {
+    margin: 0;  /* Remove todas as margens */
+    padding: 0; /* Remove qualquer espaçamento interno */
+    box-sizing: border-box; /* Garante que as bordas sejam contabilizadas corretamente */
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  
+
+  /* -------------------------------------HOME-----------------------------------------  */
+
+.home {
+    display: flex;                /* Flexbox para organizar horizontalmente */
+    align-items: center;          /* Alinha verticalmente os itens no centro */
+    justify-content: space-between; /* Espaço entre a imagem e o menu */
+    position: relative;
+    background-color: #0f0f0f;
+  color: white;
+  padding: 30px;
+  border: solid 2px black;
+  height: 100px;
+  margin-top: 0%;
+  padding: 0 30px;              /* Espaçamento interno (lateral) */
+}
+
+#home_imagem {
+    height: 150px; /* Tamanho proporcional à altura do header */
+  width: auto;  /* Mantém a proporção da imagem */
+  margin-left: 220px;
+}
+.menu {
+    list-style: none;             /* Remove marcadores das listas */
+    display: flex;                /* Flexbox para alinhar horizontalmente os links */
+    gap: 100px;                    /* Espaçamento entre os itens do menu */
+    margin: 0;                    /* Remove margens padrão */
+    padding: 0;   
+    margin-right: 150px;
+}
+
+.menu li { 
+    font-size: 28px;              /* Tamanho da fonte maior */
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+    padding: 10px 0;          /* Adiciona espaçamento interno vertical */
+    text-align: center;       /* Centraliza o conteúdo do item */
+    border-bottom: 2px solid transparent; /* Linha inferior invisível (para animações) */
+    transition: border-color 0.3s; /* Anima a cor da borda ao passar o mouse */
+}
+
+.menu li:hover {
+    border-bottom: 2px solid white; /* Mostra a linha inferior ao passar o mouse */
+}
+
+
+.link-nav {
+    text-decoration: none;        /* Remove o sublinhado dos links */
+    color: white;                 /* Define a cor do texto */
+    font-size: 18px;
+    transition: color 0.3s;       /* Adiciona um efeito ao passar o mouse */
+  }
+  
+  .link-nav:hover {
+    color: #ddd;                  /* Cor ao passar o mouse */
+  }
+  /* --------------------------------CARROSSEL--------------------------------------- */
+
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Ocupa toda a largura disponível */
+    border-bottom: solid 4px rgb(29, 29, 29);
+  }
+
+  .slides {
+    display: flex;
+  }
+  .slide {
+    flex: 0 0 100%; /* Cada slide ocupa 100% do carrossel */
+    height: 100%; /* Altura igual ao carrossel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide img {
+    width: 100%; /* Ajusta a largura da imagem ao slide */
+    height: 100%; /* Ajusta a altura da imagem ao slide */
+    object-fit: cover; /* Garante que a imagem preencha o slide sem distorcer */
+  }
+
+  .slide1 { background-image: url('https://via.placeholder.com/600x300?text=Slide+1'); }
+  .slide2 { background-image: url('https://via.placeholder.com/600x300?text=Slide+2'); }
+  .slide3 { background-image: url('https://via.placeholder.com/600x300?text=Slide+3'); }
+  .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  .control {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .control:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  /*---------------------------------------SOBRE------------------------------------   */
+  * {
+    box-sizing: border-box; /* Inclui padding e bordas nas dimensões */ 
+}
+  .container-sobre {
+    margin: 0; /* Remove margem externa */
+    display: flex;
+    justify-content: space-between; /* Espaço entre os elementos */
+    margin-left: 0px;
+    padding: 40px;
+    gap: 5px; /* Espaçamento entre os itens */
+    background-color: black; /* Define o fundo preto */
+    border-bottom: solid 4px #1e1e1e;
+  }
+  .texto-sobre {
+    border-bottom: solid 4px #DCAD07;
+    display: inline-block; /* Faz com que a borda se ajuste ao tamanho do texto */
+    font-size: 36px;
+  }
+  
+  .sobre_nos {
+    text-align: left;
+    white-space: nowrap; /* Evita quebra de linha */
+    margin-top: 150px;
+    color: white;
+    font-size: 20px;
+    margin: 0; /* Remove margens */
+  }
+  
+  
+  .foto_ilustracao {
+    text-align: right; /* Alinha a imagem à direita */
+    max-width: 120%; /* Limita a largura da imagem */
+    margin: 0; /* Remove margens */
+  }
+  
+  .img-fachada {
+    max-width: 70%; /* Garante que a imagem seja responsiva */
+    height: auto; /* Mantém a proporção */
+    border-radius: 25px;
+    margin-right: 100px;
+    border: 4px solid #DCAD07;
+        border-top: 10px solid #DCAD07;
+  }
+  #sobrenos {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 30px; /* Ajusta o tamanho da fonte */
+    line-height: 1.9; /* Espaçamento entre as linhas */
+    white-space: normal; /* Permite quebra de linha no texto */
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+
+  /*---------------------------------SOBRE-PARTE2------------------------------- */
+
+  .container2-sobre {
+    margin: 0; /* Remove margem externa */
+    display: flex;
+    justify-content: space-between; /* Espaço entre os elementos */
+    margin-left: 0px;
+    padding: 40px;
+    gap: 5px; /* Espaçamento entre os itens */
+    background-color: black; /* Define o fundo preto */
+    border-bottom: solid 4px #1e1e1e;
+    align-items: left;
+  }
+  .sobre2_nos {
+    text-align: left; /* Alinha o texto à esquerda */
+  color: white;
+  font-size: 20px;
+  margin: 0; /* Remove margens */
+  display: flex;
+  flex-direction: column; /* Para que o título e o parágrafo fiquem em coluna */
+  justify-content: center;
+  }
+
+  #sobre2 {
+    font-size: 30px; /* Ajusta o tamanho da fonte */
+  line-height: 1.9; /* Espaçamento entre as linhas */
+  white-space: normal; /* Permite quebra de linha no texto */
+  margin-left: 40px;
+  margin-top: 20px;
+
+  }
+
+  .fotoparte2 {
+    max-width: 50%; /* Limita a largura da imagem */
+    margin: 0; /* Remove margens */
+  }
+  .img-fachada2 {
+    max-width: 100%; /* Garante que a imagem seja responsiva */
+  height: auto; /* Mantém a proporção */
+  border-radius: 25px;
+  border: 4px solid #DCAD07;
+  border-top: 10px solid #DCAD07;
+  align-items: right;
+  }
+
+  /*-------------------------------------delivery-------------------------------------- */
+  .delivery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px;
+    background-color: #000000; /* Fundo preto */
+    color: #ffffff; /* Texto branco */
+    border-top: 4px solid #1e1e1e;
+    height: auto;
+  }
+  
+  .imagem-entrega {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imagem-entrega-principal {
+    max-width: 150%; /* Tamanho máximo da imagem */
+    height: auto;
+    margin-left: 5px;
+  }
+  
+  .texto-entrega {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .imagem-entrega-icone {
+    max-width: 250px; /* Ajuste de tamanho */
+    height: auto;
+  }
+  
+  .titulo-delivery {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  .descricao-delivery {
+    font-size: 1.6rem;
+    margin-bottom: 60px;
+  }
+  
+  .botao-delivery {
+    font-size: 1.8rem;
+    color: #000000;
+    background-color: #DCAD07;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: 600; /* Texto mais marcado */
+    margin-top: 20px;
+  }
+  
+  .botao-delivery:hover {
+    background-color: #ffcc00; /* Efeito hover */
+  }
+
+  /* ------------------------------- barris de choop -------------------------------  */
+
+  .barris {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffffff; /* Texto branco */
+    margin-top: 0%;
+    border-top: 4px solid #1e1e1e;
+    border-bottom: 4px solid #1e1e1e;
+    justify-content: space-between;
+
+  }
+  .meubarril {
+    align-items: left;
+    max-width: 800px;
+  }
+  #titulobarril {
+    margin-left: 100px;
+    font-size: 70px;
+  }
+  #tipobarril1 {
+    padding: 50px;
+    margin-bottom: 50px;
+    height: auto;
+    font-size: 70px;
+    border: 8px solid #DCAD07;
+    border-radius: 10px;
+    margin-right: 75px;
+  }
+  #tipobarril2 {
+    padding: 50px;
+    margin-bottom: 50px;
+    height: auto;
+    font-size: 70px;
+    border: 8px solid #DCAD07;
+    border-radius: 10px;
+    margin-right: 75px;
+  }
+
+  /*---------------------------------chopeiras em comodato ------------------------- */
+
+  .chopeiras {
+    display: flex;
+    justify-content: flex-start; /* Alinha texto e imagem à esquerda */
+    align-items: center; /* Alinha verticalmente no centro */
+    color: #000000; /* Texto branco */
+    background-color: #ffffff; /* Fundo preto */
+    margin-top: 0%;
+    padding: 0px; /* Espaço ao redor do conteúdo */
+  }
+  
+  .minhaschopeiras {
+    align-items: left; /* Texto alinhado à esquerda */
+    margin-left: 50px; /* Espaço para afastar o texto da borda */
+  }
+  
+  #titulochopeira {
+    font-size: 80px; /* Tamanho grande do título */
+    font-weight: bold; /* Título em negrito */
+    margin-bottom: 90px; /* Espaço entre o título e o parágrafo */
+
+  font-weight: bold; /* Título em negrito */
+  color: black; /* Cor laranja para destacar */
+  text-transform: uppercase; /* Letras maiúsculas */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra no texto */
+  }
+  
+  #tipochopeira1 {
+    padding: 10px; /* Espaço interno no parágrafo */
+    font-size: 30px; /* Tamanho grande do texto */
+    line-height: 1.5; /* Espaçamento entre as linhas */
+    margin-bottom: 20px;
+  color: #333; /* Cor mais suave para o texto */
+  background: #f4f4f4; /* Fundo claro para destacar o texto */
+  border-left: 5px solid #DCAD07; /* Barra laranja na lateral esquerda */
+  padding-left: 15px; /* Espaço adicional para o texto */
+  }
+  
+  #chopeiras1 {
+    max-width: 400px; /* Tamanho da imagem */
+    height: auto; /* Proporções mantidas */
+    margin-left: 50px; /* Espaço entre o texto e a imagem */
+  }
+
+  /*--------------------------------------contatos----------------------------------- */
+  .contato-site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fffbf4;
+    padding: 20px;
+  }
+  
+  #titulo-contato {
+    font-size: 42px;
+    color: black;
+    text-align: center;
+  }
+  
+  .botao-pecaja {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    color: white;
+    background: #000000;
+    border: 4px solid black;
+    border-radius: 8px;
+    font-size: 28px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .botao-pecaja:hover {
+    background: #444;
+    border-color: #222;
+  }
+  
+  .icon-link {
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+  }
+
+  /*----------------------------------rodape------------------------------------ */
+  
+  .rodape {
+    background-color: #c0b07c; /* Cor de fundo semelhante à da imagem */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rodape-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .menu-rodape {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-rodape li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-rodape li a:hover {
+    color: #fff; /* Cor de destaque no hover */
+  }
+  
+  .logorodape img {
+    max-width: 160px; /* Tamanho da logo */
+    height: auto;
+  }
+  
+  .redes-rodape {
+    display: flex;
+    gap: 60px;
+  }
+  
+  .redes-rodape .icon-link img {
+    width: 60px; /* Tamanho dos ícones */
+    height: 60px;
+    border-radius: 50%;
+    background: none;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .redes-rodape .icon-link img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /*------------------------------politicas e privacidades --------------------------- */
+  .politcas-e-termos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os elementos */
+    flex-wrap: wrap; /* Para garantir que os itens quebrem linha se necessário */
+    text-align: center;
+    margin: 20px;
+
+  }
+  
+  .politcas-e-termos a {
+    font-size: 24px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    text-decoration: none; /* Remover sublinhado */
+    font-weight: bold;
+  }
+  
+  .politcas-e-termos a:hover {
+    color: #007BFF; /* Cor do texto ao passar o mouse */
+  }
+  
+  .politcas-e-termos .icon-link2 {
+    width: 16px; /* Largura do ícone */
+    height: 16px; /* Altura do ícone */
+    margin: 0 5px; /* Espaçamento entre o ícone e o link */
+  }
+
+  /*----------------------------políticas de privacidade--------------------------  */
+  /* Reset básico */
+
+
+
+.politicas-privacidades {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+
+/* -----------------------------------politica de cookies------------------------- */
+/* Reset básico */
+
+
+.politica-cookies {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/*-----------------------------------mobile-----------------------------------------  */
+/*-----------------------------------home e menu/ carrossel-------------------------- */
+
+/* Ajustes gerais para dispositivos menores */
+@media (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ocupar toda a largura disponível */
+    height: auto;
+    padding: 20px;
+    border: none;
+  }
+
+  #home_imagem {
+    margin-left: 0;
+    height: 150px; /* Aumentar a altura da imagem principal */
+    width: 100%; /* Largura ajustada para telas menores */
+    object-fit: contain;
+  }
+
+  .menu {
+    flex-direction: row;
+    gap: 20px;
+    margin-right: 0;
+    text-align: center;
+    justify-content: center; /* Centralizar o menu */
+    width: 100%; /* Expandir o menu para toda a largura */
+  }
+
+  .menu li {
+    font-size: 22px; /* Aumentar o tamanho das fontes */
+  }
+
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Ocupar toda a largura */
+    height: 350px; /* Aumentar altura do carrossel */
+    border: none;
+  }
+
+  .carousel .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel .slide {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .carousel .slide img {
+    width: 100%; /* Expandir a imagem */
+    height: 100%; /* Ajustar altura proporcionalmente */
+    object-fit: cover; /* Manter o foco no centro da imagem */
+  }
+
+  .control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px; /* Tamanho maior para os botões */
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 12px;
+    border-radius: 50%;
+  }
+
+  .control.prev {
+    left: 10px;
+  }
+
+  .control.next {
+    right: 10px;
+  }
+}
+
+/* Ajustes específicos para celulares */
+@media (max-width: 768px) {
+  #home_imagem {
+    height: 120px;
+    width: 100%; /* Ajustar largura para telas menores */
+    object-fit: contain;
+  }
+
+  .menu li {
+    font-size: 20px; /* Ajustar tamanho da fonte */
+  }
+
+  .carousel {
+    height: 300px; /* Altura maior para o carrossel */
+  }
+
+  .carousel .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .control {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+/* Ajustes para telas muito pequenas (ex.: 480px) */
+@media (max-width: 480px) {
+  .home {
+    padding: 10px;
+    width: 100%;
+  }
+
+  #home_imagem {
+    height: 100px; /* Ajustar altura da imagem */
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .menu {
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .menu li {
+    font-size: 18px;
+  }
+
+  .carousel {
+    height: 250px; /* Altura maior para o carrossel */
+  }
+
+  .carousel .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .control {
+    font-size: 18px;
+    padding: 8px;
+  }
+}
+
+
+
+
+/*--------------------------------------sobre mobile---------------------------------- */
+/* --------------------------------------- SOBRE ------------------------------------ */
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .container-sobre,
+  .container2-sobre {
+    flex-direction: column; /* Empilha os itens */
+    align-items: center; /* Centraliza o conteúdo */
+    padding: 20px;
+    margin: none;
+    border: none;
+  }
+
+  .sobre_nos,
+  .sobre2_nos {
+    text-align: center; /* Centraliza o texto */
+    font-size: 12px; /* Ajusta o tamanho da fonte */
+  }
+
+  .foto_ilustracao,
+  .fotoparte2 {
+    margin: 20px 0; /* Espaçamento uniforme para as imagens */
+  }
+  .texto-sobre {
+    font-size: 28px;
+  }
+
+  .img-fachada,
+  .img-fachada2 {
+    width: 100%; /* As imagens ocupam 100% da largura do contêiner */
+    max-width: 300px; /* Limita o tamanho máximo */
+    aspect-ratio: 4 / 5; /* Força ambas as imagens a terem a proporção 3:4 */
+    object-fit: cover; /* Garante que a imagem seja preenchida corretamente sem distorcer */
+    height: auto; /* Mantém a proporcionalidade */
+    border-radius: 15px;
+    border: 4px solid #DCAD07;
+    border-top: 10px solid #DCAD07;
+    margin: 0 auto; /* Centraliza as imagens */
+    display: block;
+  }
+
+  #sobrenos,
+  #sobre2 {
+    font-size: 20px; /* Uniformiza o tamanho do texto */
+    line-height: 1.6;
+    margin: 10px 0; /* Adiciona espaçamento entre textos */
+  }
+}
+/*-------------------------------------delivery mobile----------------------------------- */
+
+@media (max-width: 768px) {
+  .delivery {
+    flex-direction: column; /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center;
+    padding: 40px; /* Reduz o espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    border: none;
+  }
+
+  .imagem-entrega {
+    display: none; /* Oculta a imagem principal em telas menores */
+  }
+
+  .texto-entrega {
+    flex: unset; /* Remove a propriedade flex */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .titulo-delivery {
+    font-size: 2rem; /* Reduz o tamanho da fonte do título */
+    margin-top: 20px; /* Espaçamento superior */
+  }
+
+  .descricao-delivery {
+    font-size: 1.2rem; /* Reduz o tamanho da fonte da descrição */
+    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+    margin-bottom: 40px; /* Reduz o espaçamento inferior */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  }
+
+  .botao-delivery {
+    font-size: 1.6rem; /* Ajusta o tamanho do botão */
+    padding: 10px 20px; /* Reduz o espaçamento interno do botão */
+    margin-top: 20px; /* Espaçamento superior */
+  }
+
+  .imagem-entrega-icone {
+    max-width: 200px; /* Reduz o tamanho do ícone */
+    height: auto; /* Mantém a proporção */
+    margin-bottom: 20px; /* Espaçamento inferior */
+  }
+}
+/* ------------------------------- barris de choop mobile ----------------------------  */
+
+@media (max-width: 768px) {
+  .barris {
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Ajusta o espaçamento interno */
+  }
+
+  .opcao-barril {
+    margin-bottom: 20px; /* Espaçamento entre a imagem e os barris */
+  }
+
+  #titulobarril {
+    font-size: 2rem; /* Reduz o tamanho do título */
+    margin: 10px 0; /* Ajusta margens do título */
+  }
+
+  .meubarril {
+    max-width: 90%; /* Reduz a largura da imagem */
+    height: auto; /* Mantém a proporção */
+  }
+
+  #tipobarril {
+    display: flex; /* Alinha os barris lado a lado */
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os itens */
+  }
+
+  #tipobarril1,
+  #tipobarril2 {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte */
+    padding: 20px; /* Ajusta o espaçamento interno */
+    margin: 0; /* Remove margens adicionais */
+    max-width: 120px; /* Define uma largura máxima */
+    text-align: center; /* Centraliza o texto */
+  }
+}
+
+ /*-----------------------------chopeiras em comodato  mobile------------------------- */
+ @media (max-width: 768px) {
+  .chopeiras {
+    flex-direction: column; /* Organiza elementos verticalmente */
+    justify-content: center; /* Centraliza os elementos */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Ajusta o espaçamento interno */
+  }
+
+  .minhaschopeiras {
+    margin: 0; /* Remove margens laterais */
+    order: 1; /* Garante que o título apareça no topo */
+  }
+
+  #titulochopeira {
+    font-size: 2rem; /* Reduz o tamanho do título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+  }
+
+  #chopeiras1 {
+    max-width: 70%; /* Ajusta o tamanho da imagem */
+    height: auto; /* Mantém as proporções da imagem */
+    margin: 0px 0; /* Espaço acima e abaixo da imagem */
+    order: 2; /* Define a ordem da imagem */
+  }
+
+  #tipochopeira1 {
+    font-size: 1.2rem; /* Reduz o tamanho do texto */
+    padding: 10px; /* Ajusta o espaçamento interno */
+    margin: 0; /* Remove margens desnecessárias */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    order: 3; /* Define a ordem do parágrafo */
+  }
+}
+
+ /*---------------------------------contatos mobile----------------------------------- */
+
+ @media (max-width: 768px) {
+  .contato-site {
+    padding: 10px; /* Reduz o espaçamento interno */
+  }
+
+  #titulo-contato {
+    font-size: 1.5rem; /* Ajusta o tamanho do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+  }
+
+  .botao-pecaja {
+    flex-direction: row; /* Mantém o ícone e texto alinhados na mesma linha */
+    font-size: 1.2rem; /* Reduz o tamanho do texto */
+    padding: 15px 20px; /* Ajusta o espaçamento interno do botão */
+    width: 100%; /* Ocupa toda a largura disponível */
+    justify-content: center; /* Centraliza o conteúdo dentro do botão */
+  }
+
+  .icon-link {
+    width: 32px; /* Reduz o tamanho do ícone */
+    height: 32px; /* Proporcional ao ajuste de largura */
+    margin-right: 10px; /* Espaço reduzido entre o ícone e o texto */
+  }
+}
+
+/*------------------------------------rodape mobile --------------------------------- */
+@media (max-width: 768px) {
+  .rodape-footer {
+    flex-direction: column; /* Reorganiza os elementos em coluna */
+    align-items: center;
+    gap: 20px; /* Espaço entre os elementos */
+    width: 100%; /* Ocupa toda a largura */
+    padding: 10px;
+  }
+
+  .logorodape {
+    display: none; /* Esconde a logo do meio */
+  }
+
+  .menu-rodape {
+    flex-direction: row; /* Mantém os links do menu em linha */
+    justify-content: center; /* Centraliza os links */
+    gap: 15px; /* Espaçamento entre os itens */
+  }
+
+  .menu-rodape li a {
+    font-size: 18px; /* Reduz o tamanho do texto */
+  }
+
+  .redes-rodape {
+    flex-direction: row; /* Mantém os ícones das redes sociais em linha */
+    justify-content: center; /* Centraliza os ícones */
+    gap: 40px; /* Espaçamento entre os ícones */
+    margin-bottom: 20px;
+  }
+
+  .redes-rodape .icon-link img {
+    width: 60px; /* Reduz o tamanho dos ícones */
+    height: 60px;
+    gap: 40px;
+  }
+}
+/*-----------------------políticas e privacidade --------------------------------- */
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .politcas-e-termos {
+    flex-direction: row; /* Coloca os links em uma coluna para melhor visualização */
+    align-items: center; /* Centraliza os itens */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0; /* Ajusta as margens */
+  }
+
+  .politcas-e-termos a {
+    font-size: 18px; /* Ajusta o tamanho da fonte para telas menores */
+    color: #333; /* Mantém a cor do texto */
+    text-decoration: none; /* Remover sublinhado */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espaçamento entre os links */
+  }
+
+  .politcas-e-termos a:hover {
+    color: #007BFF; /* Cor ao passar o mouse */
+  }
+
+  .politcas-e-termos .icon-link2 {
+    width: 16px; /* Largura do ícone */
+    height: 16px; /* Altura do ícone */
+    margin: 0 5px; /* Espaçamento entre o ícone e o link */
+  }
+  
+  /* Links específicos */
+  .cookies1 {
+    padding-bottom: 15px; /* Adiciona um espaçamento inferior ao link de cookies */
+  }
+  
+  .privacidades1 {
+    padding-bottom: 15px; /* Adiciona um espaçamento inferior ao link de privacidade */
+  }
+}
+
+
+/* ---------------------------politicas de cookies------------------------------*/
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .politica-cookies {
+    padding: 15px; /* Reduz o padding para melhor aproveitamento do espaço */
+    max-width: 100%; /* Garante que a largura ocupe 100% da tela em dispositivos pequenos */
+  }
+
+  h1 {
+    font-size: 24px; /* Reduz o tamanho do título */
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 20px; /* Ajusta o tamanho do subtítulo */
+    margin-top: 15px;
+  }
+
+  p {
+    font-size: 14px; /* Ajusta o tamanho do texto */
+    margin-bottom: 12px; /* Ajusta o espaçamento entre os parágrafos */
+  }
+
+  ul li {
+    font-size: 14px; /* Ajusta o tamanho da lista */
+  }
+}
+
+/*----------------------------políticas de privacidade--------------------------  */
+/* Reset básico */
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .politicas-privacidades {
+    padding: 20px; /* Reduz o padding */
+    margin: 10px; /* Ajusta a margem */
+  }
+
+  h1 {
+    font-size: 24px; /* Reduz o tamanho do título */
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 15px; /* Reduz a margem inferior */
+  }
+
+  h2 {
+    font-size: 20px; /* Reduz o tamanho dos subtítulos */
+    margin-top: 15px; /* Ajusta a margem superior */
+  }
+
+  p {
+    font-size: 14px; /* Reduz o tamanho do texto */
+    margin-bottom: 12px; /* Ajusta o espaçamento entre os parágrafos */
+  }
+
+  ul {
+    padding-left: 15px; /* Ajusta o espaçamento à esquerda da lista */
+  }
+
+  ul li {
+    margin-bottom: 8px; /* Reduz o espaçamento entre os itens da lista */
+    font-size: 14px; /* Ajusta o tamanho da fonte dos itens da lista */
+  }
+}
